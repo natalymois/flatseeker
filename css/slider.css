@@ -5,7 +5,8 @@
   display: inline-block;
   position: relative;
   height: 570px;
-  width: 100%; }
+  width: 100%;
+  overflow: hidden;  }
 
 .csslider1 > .cs_anchor {
   display: none; }
@@ -22,7 +23,8 @@
   white-space: nowrap; }
 
 .csslider1 > ul > li.img img {
-  width: 100%; }
+  width: 100%;
+  overflow: hidden;  }
 
 .csslider1 > ul > li.img {
   font-size: 0pt;

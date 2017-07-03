@@ -81,7 +81,7 @@ html {
 		        animation-duration: 1.7s;
     -webkit-animation-name: slideInTop;
             animation-name: slideInTop;
-    max-width: 1349px;
+    max-width: 1200px;
     width: 100%;
     margin: 0;
     margin-bottom: 0;
@@ -1315,7 +1315,7 @@ html {
         flex-wrap: wrap;
   }
   .google_map {
-    width: 90%;
+    width: 98%;
     margin-left: 15px;
   }
   .contacts {
@@ -1339,7 +1339,7 @@ html {
     height: 160px;
   }
   .properties-item {
-    width: 93.2%;
+    width: 99.2%;
   }
   .sale, .rent {
     top: 5%;
