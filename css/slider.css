@@ -1,0 +1,1060 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&subset=latin,cyrillic-ext,latin-ext,cyrillic,greek-ext,greek,vietnamese);
+
+
+.csslider1 {
+  display: inline-block;
+  position: relative;
+  height: 570px;
+  width: 100%; }
+
+.csslider1 > .cs_anchor {
+  display: none; }
+
+.csslider1 > ul {
+  position: relative;
+  z-index: 1;
+  font-size: 0;
+  line-height: 0;
+  margin: 0 auto;
+  padding: 0;
+  height: 570px;
+  overflow: hidden;
+  white-space: nowrap; }
+
+.csslider1 > ul > li.img img {
+  width: 100%; }
+
+.csslider1 > ul > li.img {
+  font-size: 0pt;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  user-select: none; }
+
+.csslider1 > ul > li {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  font-size: 15px;
+  font-size: initial;
+  line-height: normal;
+  white-space: normal;
+  vertical-align: top;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0); }
+
+.csslider1 .cs_lnk {
+  display: none; }
+
+/* ===================== ARROWS ===================== */
+.csslider1 > .cs_arrowprev,
+.csslider1 > .cs_arrownext {
+  position: absolute;
+  top: 50%;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  z-index: 5; }
+
+.csslider1 > .cs_arrowprev > label,
+.csslider1 > .cs_arrownext > label {
+  position: absolute;
+  text-decoration: none;
+  cursor: pointer;
+  opacity: 0;
+  z-index: -1; }
+
+.csslider1 > .cs_arrowprev {
+  left: 0; }
+
+.csslider1 > .cs_arrownext {
+  right: 0; }
+
+.csslider1 > .cs_arrowprev > label.num2,
+.csslider1 > .cs_arrownext > label.num1 {
+  opacity: 1;
+  z-index: 5; }
+
+.csslider1 > .slide:checked ~ .cs_arrowprev > label,
+.csslider1 > .slide:checked ~ .cs_arrownext > label {
+  opacity: 0;
+  z-index: -1; }
+
+/* ===================== /ARROWS ===================== */
+/* ===================== BULLETS ===================== */
+.csslider1 > .cs_bullets {
+  position: absolute;
+  left: 0;
+  bottom: 15px;
+  width: 100%;
+  z-index: 6;
+  font-size: 0;
+  line-height: 20px;
+  text-align: left;
+  padding-left: 20%;
+  margin-bottom: 5px;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+.csslider1 > .cs_bullets > div {
+  margin-left: -50%;
+  width: 100%; }
+
+.csslider1 > .cs_bullets > label {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  margin: 0 6px;
+  padding: 9px;
+  background: transparent;
+  border: 2px solid #ce242b;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+ }
+
+.csslider1 > .cs_bullets span {
+  visibility: hidden;
+  position: absolute;
+  opacity: 0;
+  z-index: 1;
+  left: -83px;
+  top: -96px; }
+
+.csslider1 > .cs_bullets img {
+  max-width: none; }
+
+/* ===================== /BULLETS ===================== */
+
+/* ===================== EFFECT ===================== */
+.csslider1 > ul > li {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: inline-block;
+  opacity: 0;
+  z-index: 1;
+  -webkit-transition: opacity 2000ms ease, -webkit-transform 8100ms linear;
+  -moz-transition: opacity 2000ms ease, -moz-transform 8100ms linear;
+  -ms-transition: opacity 2000ms ease, -ms-transform 8100ms linear;
+  -o-transition: opacity 2000ms ease, -o-transform 8100ms linear;
+  transition: opacity 2000ms ease, transform 8100ms linear; }
+
+.csslider1 > ul > li.num0 {
+  opacity: 0;
+  -webkit-transform: scale(1.3) translate(-11.53846%, 11.53846%);
+  -moz-transform: scale(1.3) translate(-11.53846%, 11.53846%);
+  -ms-transform: scale(1.3) translate(-11.53846%, 11.53846%);
+  -o-transform: scale(1.3) translate(-11.53846%, 11.53846%);
+  transform: scale(1.3) translate(-11.53846%, 11.53846%); }
+
+.csslider1 > ul > li.num1 {
+  opacity: 0;
+  -webkit-transform: scale(1.3) translate(11.53846%, 11.53846%);
+  -moz-transform: scale(1.3) translate(11.53846%, 11.53846%);
+  -ms-transform: scale(1.3) translate(11.53846%, 11.53846%);
+  -o-transform: scale(1.3) translate(11.53846%, 11.53846%);
+  transform: scale(1.3) translate(11.53846%, 11.53846%); }
+
+.csslider1 > ul > li.num2 {
+  opacity: 0;
+  -webkit-transform: scale(1.3) translate(-11.53846%, -11.53846%);
+  -moz-transform: scale(1.3) translate(-11.53846%, -11.53846%);
+  -ms-transform: scale(1.3) translate(-11.53846%, -11.53846%);
+  -o-transform: scale(1.3) translate(-11.53846%, -11.53846%);
+  transform: scale(1.3) translate(-11.53846%, -11.53846%); }
+
+.csslider1 > ul > li.num3 {
+  opacity: 0;
+  -webkit-transform: scale(1.3) translate(-11.53846%, 11.53846%);
+  -moz-transform: scale(1.3) translate(-11.53846%, 11.53846%);
+  -ms-transform: scale(1.3) translate(-11.53846%, 11.53846%);
+  -o-transform: scale(1.3) translate(-11.53846%, 11.53846%);
+  transform: scale(1.3) translate(-11.53846%, 11.53846%); }
+
+.csslider1 > ul > li.num4 {
+  opacity: 0;
+  -webkit-transform: scale(1.3) translate(11.53846%, 11.53846%);
+  -moz-transform: scale(1.3) translate(11.53846%, 11.53846%);
+  -ms-transform: scale(1.3) translate(11.53846%, 11.53846%);
+  -o-transform: scale(1.3) translate(11.53846%, 11.53846%);
+  transform: scale(1.3) translate(11.53846%, 11.53846%); }
+
+.csslider1 > ul > li.num5 {
+  opacity: 0;
+  -webkit-transform: scale(1.3) translate(-11.53846%, -11.53846%);
+  -moz-transform: scale(1.3) translate(-11.53846%, -11.53846%);
+  -ms-transform: scale(1.3) translate(-11.53846%, -11.53846%);
+  -o-transform: scale(1.3) translate(-11.53846%, -11.53846%);
+  transform: scale(1.3) translate(-11.53846%, -11.53846%); }
+
+.csslider1 > ul > li.num6 {
+  opacity: 0;
+  -webkit-transform: scale(1.3) translate(-11.53846%, 11.53846%);
+  -moz-transform: scale(1.3) translate(-11.53846%, 11.53846%);
+  -ms-transform: scale(1.3) translate(-11.53846%, 11.53846%);
+  -o-transform: scale(1.3) translate(-11.53846%, 11.53846%);
+  transform: scale(1.3) translate(-11.53846%, 11.53846%); }
+
+.csslider1 > ul > li.num0 {
+  opacity: 1;
+  z-index: 2; }
+
+.csslider1 > .slide:checked ~ ul > li.num0 {
+  opacity: 0;
+  z-index: 1; }
+
+.csslider1 > #cs_slide1_0:checked ~ ul > li.num0,
+.csslider1 > #cs_slide1_1:checked ~ ul > li.num1,
+.csslider1 > #cs_slide1_2:checked ~ ul > li.num2,
+.csslider1 > #cs_slide1_3:checked ~ ul > li.num3,
+.csslider1 > #cs_slide1_4:checked ~ ul > li.num4,
+.csslider1 > #cs_slide1_5:checked ~ ul > li.num5,
+.csslider1 > #cs_slide1_6:checked ~ ul > li.num6 {
+  opacity: 1;
+  -webkit-transform: scale(1) translate(0, 0);
+  -moz-transform: scale(1) translate(0, 0);
+  -ms-transform: scale(1) translate(0, 0);
+  -o-transform: scale(1) translate(0, 0);
+  transform: scale(1) translate(0, 0);
+  z-index: 2; }
+
+/*Время активной анимации должно равняться частному от длительности всей анимации и числа слайдов (в нашем случае 1/7 или 14,2857%)*/
+@-webkit-keyframes kenbernsBR {
+  0%, 100% {
+    -webkit-transform: scale(1);
+    opacity: 0; }
+  3.5291%, 14.285714% {
+    opacity: 1; }
+  17.813%, 28.571428% {
+    -webkit-transform: scale(1.3) translate(11.53846%, 11.53846%);
+    opacity: 0;
+    z-index: 2; } }
+@-moz-keyframes kenbernsBR {
+  0%, 100% {
+    -webkit-transform: scale(1);
+    opacity: 0; }
+  3.5291%, 14.285714% {
+    opacity: 1; }
+  17.813%, 28.571428% {
+    -webkit-transform: scale(1.3) translate(11.53846%, 11.53846%);
+    opacity: 0;
+    z-index: 2; } }
+@-ms-keyframes kenbernsBR {
+  0%, 100% {
+    -webkit-transform: scale(1);
+    opacity: 0; }
+  3.5291%, 14.285714% {
+    opacity: 1; }
+  17.813%, 28.571428% {
+    -webkit-transform: scale(1.3) translate(11.53846%, 11.53846%);
+    opacity: 0;
+    z-index: 2; } }
+@-o-keyframes kenbernsBR {
+  0%, 100% {
+    -webkit-transform: scale(1);
+    opacity: 0; }
+  3.5291%, 14.285714% {
+    opacity: 1; }
+  17.813%, 28.571428% {
+    -webkit-transform: scale(1.3) translate(11.53846%, 11.53846%);
+    opacity: 0;
+    z-index: 2; } }
+@keyframes kenbernsBR {
+  0%, 100% {
+    -webkit-transform: scale(1);
+    opacity: 0; }
+  3.5291%, 14.285714% {
+    opacity: 1; }
+  17.813%, 28.571428% {
+    -webkit-transform: scale(1.3) translate(11.53846%, 11.53846%);
+    opacity: 0;
+    z-index: 2; } }
+@-webkit-keyframes kenbernsBL {
+  0%, 100% {
+    -webkit-transform: scale(1);
+    opacity: 0; }
+  3.5291%, 14.285714% {
+    opacity: 1; }
+  17.813%, 28.571428% {
+    -webkit-transform: scale(1.3) translate(11.53846%, -11.53846%);
+    opacity: 0;
+    z-index: 2; } }
+@-moz-keyframes kenbernsBL {
+  0%, 100% {
+    -webkit-transform: scale(1);
+    opacity: 0; }
+  3.5291%, 14.285714% {
+    opacity: 1; }
+  17.813%, 28.571428% {
+    -webkit-transform: scale(1.3) translate(11.53846%, -11.53846%);
+    opacity: 0;
+    z-index: 2; } }
+@-ms-keyframes kenbernsBL {
+  0%, 100% {
+    -webkit-transform: scale(1);
+    opacity: 0; }
+  3.5291%, 14.285714% {
+    opacity: 1; }
+  17.813%, 28.571428% {
+    -webkit-transform: scale(1.3) translate(11.53846%, -11.53846%);
+    opacity: 0;
+    z-index: 2; } }
+@-o-keyframes kenbernsBL {
+  0%, 100% {
+    -webkit-transform: scale(1);
+    opacity: 0; }
+  3.5291%, 14.285714% {
+    opacity: 1; }
+  17.813%, 28.571428% {
+    -webkit-transform: scale(1.3) translate(11.53846%, -11.53846%);
+    opacity: 0;
+    z-index: 2; } }
+@keyframes kenbernsBL {
+  0%, 100% {
+    -webkit-transform: scale(1);
+    opacity: 0; }
+  3.5291%, 14.285714% {
+    opacity: 1; }
+  17.813%, 28.571428% {
+    -webkit-transform: scale(1.3) translate(11.53846%, -11.53846%);
+    opacity: 0;
+    z-index: 2; } }
+@-webkit-keyframes kenbernsTL {
+  0%, 100% {
+    -webkit-transform: scale(1);
+    opacity: 0; }
+  3.5291%, 14.285714% {
+    opacity: 1; }
+  17.813%, 28.571428% {
+    -webkit-transform: scale(1.3) translate(-11.53846%, -11.53846%);
+    opacity: 0;
+    z-index: 2; } }
+@-moz-keyframes kenbernsTL {
+  0%, 100% {
+    -webkit-transform: scale(1);
+    opacity: 0; }
+  3.5291%, 14.285714% {
+    opacity: 1; }
+  17.813%, 28.571428% {
+    -webkit-transform: scale(1.3) translate(-11.53846%, -11.53846%);
+    opacity: 0;
+    z-index: 2; } }
+@-ms-keyframes kenbernsTL {
+  0%, 100% {
+    -webkit-transform: scale(1);
+    opacity: 0; }
+  3.5291%, 14.285714% {
+    opacity: 1; }
+  17.813%, 28.571428% {
+    -webkit-transform: scale(1.3) translate(-11.53846%, -11.53846%);
+    opacity: 0;
+    z-index: 2; } }
+@-o-keyframes kenbernsTL {
+  0%, 100% {
+    -webkit-transform: scale(1);
+    opacity: 0; }
+  3.5291%, 14.285714% {
+    opacity: 1; }
+  17.813%, 28.571428% {
+    -webkit-transform: scale(1.3) translate(-11.53846%, -11.53846%);
+    opacity: 0;
+    z-index: 2; } }
+@keyframes kenbernsTL {
+  0%, 100% {
+    -webkit-transform: scale(1);
+    opacity: 0; }
+  3.5291%, 14.285714% {
+    opacity: 1; }
+  17.813%, 28.571428% {
+    -webkit-transform: scale(1.3) translate(-11.53846%, -11.53846%);
+    opacity: 0;
+    z-index: 2; } }
+@-webkit-keyframes kenbernsTR {
+  0%, 100% {
+    -webkit-transform: scale(1);
+    opacity: 0; }
+  3.5291%, 14.285714% {
+    opacity: 1; }
+  17.813%, 28.571428% {
+    -webkit-transform: scale(1.3) translate(-11.53846%, 11.53846%);
+    opacity: 0;
+    z-index: 2; } }
+@-moz-keyframes kenbernsTR {
+  0%, 100% {
+    -webkit-transform: scale(1);
+    opacity: 0; }
+  3.5291%, 14.285714% {
+    opacity: 1; }
+  17.813%, 28.571428% {
+    -webkit-transform: scale(1.3) translate(-11.53846%, 11.53846%);
+    opacity: 0;
+    z-index: 2; } }
+@-ms-keyframes kenbernsTR {
+  0%, 100% {
+    -webkit-transform: scale(1);
+    opacity: 0; }
+  3.5291%, 14.285714% {
+    opacity: 1; }
+  17.813%, 28.571428% {
+    -webkit-transform: scale(1.3) translate(-11.53846%, 11.53846%);
+    opacity: 0;
+    z-index: 2; } }
+@-o-keyframes kenbernsTR {
+  0%, 100% {
+    -webkit-transform: scale(1);
+    opacity: 0; }
+  3.5291%, 14.285714% {
+    opacity: 1; }
+  17.813%, 28.571428% {
+    -webkit-transform: scale(1.3) translate(-11.53846%, 11.53846%);
+    opacity: 0;
+    z-index: 2; } }
+@keyframes kenbernsTR {
+  0%, 100% {
+    -webkit-transform: scale(1);
+    opacity: 0; }
+  3.5291%, 14.285714% {
+    opacity: 1; }
+  17.813%, 28.571428% {
+    -webkit-transform: scale(1.3) translate(-11.53846%, 11.53846%);
+    opacity: 0;
+    z-index: 2; } }
+/*56700 мсек - это время проигрывания одного слайда и, с учетом времени активной анимации слайда, равной 1/7, оно же равно времени активного проигрывания всех слайдов*/
+    .csslider1 > #cs_play1:checked ~ ul > li.num0 {
+      -webkit-animation: kenbernsTR 56700ms infinite -2000ms linear;
+      -moz-animation: kenbernsTR 56700ms infinite -2000ms linear;
+      -ms-animation: kenbernsTR 56700ms infinite -2000ms linear;
+      -o-animation: kenbernsTR 56700ms infinite -2000ms linear;
+      animation: kenbernsTR 56700ms infinite -2000ms linear; }
+
+    .csslider1 > #cs_play1:checked ~ ul > li.num1 {
+      -webkit-animation: kenbernsBR 56700ms infinite 6100ms linear;
+      -moz-animation: kenbernsBR 56700ms infinite 6100ms linear;
+      -ms-animation: kenbernsBR 56700ms infinite 6100ms linear;
+      -o-animation: kenbernsBR 56700ms infinite 6100ms linear;
+      animation: kenbernsBR 56700ms infinite 6100ms linear; }
+
+    .csslider1 > #cs_play1:checked ~ ul > li.num2 {
+      -webkit-animation: kenbernsTL 56700ms infinite 14200ms linear;
+      -moz-animation: kenbernsTL 56700ms infinite 14200ms linear;
+      -ms-animation: kenbernsTL 56700ms infinite 14200ms linear;
+      -o-animation: kenbernsTL 56700ms infinite 14200ms linear;
+      animation: kenbernsTL 56700ms infinite 14200ms linear; }
+
+.csslider1 > #cs_play1:checked ~ ul > li.num3 {
+  -webkit-animation: kenbernsBL 56700ms infinite 22300ms linear;
+  -moz-animation: kenbernsBL 56700ms infinite 22300ms linear;
+  -ms-animation: kenbernsBL 56700ms infinite 22300ms linear;
+  -o-animation: kenbernsBL 56700ms infinite 22300ms linear;
+  animation: kenbernsBL 56700ms infinite 22300ms linear; }
+
+.csslider1 > #cs_play1:checked ~ ul > li.num4 {
+  -webkit-animation: kenbernsBR 56700ms infinite 30400ms linear;
+  -moz-animation: kenbernsBR 56700ms infinite 30400ms linear;
+  -ms-animation: kenbernsBR 56700ms infinite 30400ms linear;
+  -o-animation: kenbernsBR 56700ms infinite 30400ms linear;
+  animation: kenbernsBR 56700ms infinite 30400ms linear; }
+
+.csslider1 > #cs_play1:checked ~ ul > li.num5 {
+  -webkit-animation: kenbernsTL 56700ms infinite 38500ms linear;
+  -moz-animation: kenbernsTL 56700ms infinite 38500ms linear;
+  -ms-animation: kenbernsTL 56700ms infinite 38500ms linear;
+  -o-animation: kenbernsTL 56700ms infinite 38500ms linear;
+  animation: kenbernsTL 56700ms infinite 38500ms linear; }
+
+.csslider1 > #cs_play1:checked ~ ul > li.num6 {
+  -webkit-animation: kenbernsBL 56700ms infinite 46600ms linear;
+  -moz-animation: kenbernsBL 56700ms infinite 46600ms linear;
+  -ms-animation: kenbernsBL 56700ms infinite 46600ms linear;
+  -o-animation: kenbernsBL 56700ms infinite 46600ms linear;
+  animation: kenbernsBL 56700ms infinite 46600ms linear; }
+
+.csslider1 > #cs_play1:checked ~ ul > li {
+  -webkit-transition: none;
+  -moz-transition: none;
+  -ms-transition: none;
+  -o-transition: none;
+  transition: none; }
+
+/* ===================== /EFFECT ===================== */
+/************************************************************
+*************************************************************
+*************************************************************
+******************** MIX TEMPLATE START *********************
+*************************************************************
+*************************************************************
+*************************************************************/
+.csslider1 > .cs_arrowprev,
+.csslider1 > .cs_arrownext,
+.csslider1 > .cs_play_pause {
+  -webkit-transition: opacity .4s ease;
+  -moz-transition: opacity .4s ease;
+  -ms-transition: opacity .4s ease;
+  -o-transition: opacity .4s ease;
+  transition: opacity .4s ease;
+  opacity: 0; }
+
+.csslider1:hover > .cs_arrowprev,
+.csslider1:hover > .cs_arrownext,
+.csslider1:hover > .cs_play_pause {
+  opacity: 1; }
+
+/* ===================== SHOW HOVER ===================== */
+.csslider1 > .cs_arrowprev {
+  -webkit-transition: .4s all 0s ease;
+  -moz-transition: .4s all 0s ease;
+  -ms-transition: .4s all 0s ease;
+  -o-transition: .4s all 0s ease;
+  transition: .4s all 0s ease; }
+
+.csslider1 > .cs_arrownext {
+  -webkit-transition: .4s all .15s ease;
+  -moz-transition: .4s all .15s ease;
+  -ms-transition: .4s all .15s ease;
+  -o-transition: .4s all .15s ease;
+  transition: .4s all .15s ease; }
+
+.csslider1 > .cs_arrowprev,
+.csslider1 > .cs_arrownext {
+  opacity: 0;
+  -webkit-transform: translateY(-30px);
+  -moz-transform: translateY(-30px);
+  -ms-transform: translateY(-30px);
+  -o-transform: translateY(-30px);
+  transform: translateY(-30px); }
+
+.csslider1:hover > .cs_arrowprev,
+.csslider1:hover > .cs_arrownext {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0); }
+
+/* ===================== /SHOW HOVER ===================== */
+/* ===================== ARROWS ===================== */
+.csslider1 > .cs_arrowprev > label,
+.csslider1 > .cs_arrownext > label {
+  overflow: hidden;
+  margin-top: -35px;
+  width: 70px;
+  height: 70px;
+  /* Fallback for web browsers that doesn't support RGBa */
+  background-color: #fff;
+  -webkit-border-radius: 35px;
+  -moz-border-radius: 35px;
+  border-radius: 35px; }
+
+.csslider1 > .cs_arrowprev {
+  left: 90px; }
+
+.csslider1 > .cs_arrownext {
+  right: 90px; }
+
+.csslider1 > .cs_arrowprev > label {
+  right: 0; }
+
+.csslider1 > .cs_arrownext > label {
+  left: 0; }
+
+.csslider1 > .cs_arrowprev > label:after {
+  content: '\261a'; }
+
+.csslider1 > .cs_arrownext > label:after {
+  content: '\261b'; }
+
+.csslider1 > .cs_arrowprev > label:after,
+.csslider1 > .cs_arrownext > label:after {
+  display: block;
+  font: 40px "controls";
+  text-align: center;
+  line-height: 76px;
+  color: #3a4a5a; }
+
+@-webkit-keyframes nextArrow {
+  0%, 100% {
+    -webkit-transform: translateX(0px); }
+  25% {
+    -webkit-transform: translateX(2px); }
+  75% {
+    -webkit-transform: translateX(-2px); } }
+@-moz-keyframes nextArrow {
+  0%, 100% {
+    -moz-transform: translateX(0px); }
+  25% {
+    -moz-transform: translateX(2px); }
+  75% {
+    -moz-transform: translateX(-2px); } }
+@-ms-keyframes nextArrow {
+  0%, 100% {
+    -ms-transform: translateX(0px); }
+  25% {
+    -ms-transform: translateX(2px); }
+  75% {
+    -ms-transform: translateX(-2px); } }
+@-o-keyframes nextArrow {
+  0%, 100% {
+    -o-transform: translateX(0px); }
+  25% {
+    -o-transform: translateX(2px); }
+  75% {
+    -o-transform: translateX(-2px); } }
+@keyframes nextArrow {
+  0%, 100% {
+    transform: translateX(0px); }
+  25% {
+    transform: translateX(2px); }
+  75% {
+    transform: translateX(-2px); } }
+@-webkit-keyframes prevArrow {
+  0%, 100% {
+    -webkit-transform: translateX(0px); }
+  25% {
+    -webkit-transform: translateX(-2px); }
+  75% {
+    -webkit-transform: translateX(2px); } }
+@-moz-keyframes prevArrow {
+  0%, 100% {
+    -moz-transform: translateX(0px); }
+  25% {
+    -moz-transform: translateX(-2px); }
+  75% {
+    -moz-transform: translateX(2px); } }
+@-ms-keyframes prevArrow {
+  0%, 100% {
+    -ms-transform: translateX(0px); }
+  25% {
+    -ms-transform: translateX(-2px); }
+  75% {
+    -ms-transform: translateX(2px); } }
+@-o-keyframes prevArrow {
+  0%, 100% {
+    -o-transform: translateX(0px); }
+  25% {
+    -o-transform: translateX(-2px); }
+  75% {
+    -o-transform: translateX(2px); } }
+@keyframes prevArrow {
+  0%, 100% {
+    transform: translateX(0px); }
+  25% {
+    transform: translateX(-2px); }
+  75% {
+    transform: translateX(2px); } }
+
+.csslider1 > .cs_arrownext:hover > label:after {
+  -webkit-animation: nextArrow .7s infinite ease-in-out;
+  -moz-animation: nextArrow .7s infinite ease-in-out;
+  -ms-animation: nextArrow .7s infinite ease-in-out;
+  -o-animation: nextArrow .7s infinite ease-in-out;
+  animation: nextArrow .7s infinite ease-in-out; }
+
+.csslider1 > .cs_arrowprev:hover > label:after {
+  -webkit-animation: prevArrow .7s infinite ease-in-out;
+  -moz-animation: prevArrow .7s infinite ease-in-out;
+  -ms-animation: prevArrow .7s infinite ease-in-out;
+  -o-animation: prevArrow .7s infinite ease-in-out;
+  animation: prevArrow .7s infinite ease-in-out; }
+
+.csslider1 > .cs_arrowprev > label,
+.csslider1 > .cs_arrownext > label {
+  -webkit-transition: 5000ms background-color ease;
+  -moz-transition: 5000ms background-color ease;
+  -ms-transition: 5000ms background-color ease;
+  -o-transition: 5000ms background-color ease;
+  transition: 5000ms background-color ease; }
+
+.csslider1 > #cs_slide1_0:checked ~ .cs_arrowprev > label.num6,
+.csslider1 > #cs_slide1_0:checked ~ .cs_arrownext > label.num1,
+.csslider1 > #cs_slide1_1:checked ~ .cs_arrowprev > label.num0,
+.csslider1 > #cs_slide1_1:checked ~ .cs_arrownext > label.num2,
+.csslider1 > #cs_slide1_2:checked ~ .cs_arrowprev > label.num1,
+.csslider1 > #cs_slide1_2:checked ~ .cs_arrownext > label.num3,
+.csslider1 > #cs_slide1_3:checked ~ .cs_arrowprev > label.num2,
+.csslider1 > #cs_slide1_3:checked ~ .cs_arrownext > label.num4,
+.csslider1 > #cs_slide1_4:checked ~ .cs_arrowprev > label.num3,
+.csslider1 > #cs_slide1_4:checked ~ .cs_arrownext > label.num5,
+.csslider1 > #cs_slide1_5:checked ~ .cs_arrowprev > label.num4,
+.csslider1 > #cs_slide1_5:checked ~ .cs_arrownext > label.num6,
+.csslider1 > #cs_slide1_6:checked ~ .cs_arrowprev > label.num5,
+.csslider1 > #cs_slide1_6:checked ~ .cs_arrownext > label.num0 {
+  opacity: 1;
+  z-index: 5; }
+
+.csslider1 > .slide:checked ~ .cs_arrowprev > label,
+.csslider1 > .slide:checked ~ .cs_arrownext > label {
+  background-color: rgba(0,0,0,0.3); }
+
+  .csslider1 .cs_arrowprev > label,
+  .csslider1 .cs_arrownext > label {
+    background-color: rgba(0,0,0,0.3); }
+
+  .csslider1 .cs_arrowprev:hover > label.num0 {
+    background-color: #fff; }
+    .csslider1 .cs_arrownext:hover > label.num0 {
+      background-color: #fff; }
+
+@-webkit-keyframes arrow {
+  0%, 14.275714% {
+    opacity: 1;
+    z-index: 5; }
+  14.285714%, 100% {
+    opacity: 0;
+    z-index: -1; } }
+@-moz-keyframes arrow {
+  0%, 14.275714% {
+    opacity: 1;
+    z-index: 5; }
+  14.285714%, 100% {
+    opacity: 0;
+    z-index: -1; } }
+@-ms-keyframes arrow {
+  0%, 14.275714% {
+    opacity: 1;
+    z-index: 5; }
+  14.285714%, 100% {
+    opacity: 0;
+    z-index: -1; } }
+@-o-keyframes arrow {
+  0%, 14.275714% {
+    opacity: 1;
+    z-index: 5; }
+  14.285714%, 100% {
+    opacity: 0;
+    z-index: -1; } }
+@keyframes arrow {
+  0%, 14.275714% {
+    opacity: 1;
+    z-index: 5; }
+  14.285714%, 100% {
+    opacity: 0;
+    z-index: -1; } }
+.csslider1 > #cs_play1:checked ~ .cs_arrowprev > label.num6,
+.csslider1 > #cs_play1:checked ~ .cs_arrownext > label.num1 {
+  -webkit-animation: arrow 56700ms infinite -2000ms;
+  -moz-animation: arrow 56700ms infinite -2000ms;
+  -ms-animation: arrow 56700ms infinite -2000ms;
+  -o-animation: arrow 56700ms infinite -2000ms;
+  animation: arrow 56700ms infinite -2000ms; }
+
+.csslider1 > #cs_play1:checked ~ .cs_arrowprev > label.num0,
+.csslider1 > #cs_play1:checked ~ .cs_arrownext > label.num2 {
+  -webkit-animation: arrow 56700ms infinite 6100ms;
+  -moz-animation: arrow 56700ms infinite 6100ms;
+  -ms-animation: arrow 56700ms infinite 6100ms;
+  -o-animation: arrow 56700mss infinite 6100ms;
+  animation: arrow 56700ms infinite 6100ms; }
+
+.csslider1 > #cs_play1:checked ~ .cs_arrowprev > label.num1,
+.csslider1 > #cs_play1:checked ~ .cs_arrownext > label.num3 {
+  -webkit-animation: arrow 56700ms infinite 14200ms;
+  -moz-animation: arrow 56700ms infinite 14200ms;
+  -ms-animation: arrow 56700ms infinite 14200ms;
+  -o-animation: arrow 56700ms infinite 14200ms;
+  animation: arrow 56700ms infinite 14200ms; }
+
+.csslider1 > #cs_play1:checked ~ .cs_arrowprev > label.num2,
+.csslider1 > #cs_play1:checked ~ .cs_arrownext > label.num4 {
+  -webkit-animation: arrow 56700ms infinite 22300ms;
+  -moz-animation: arrow 56700ms infinite 22300ms;
+  -ms-animation: arrow 56700ms infinite 22300ms;
+  -o-animation: arrow 56700ms infinite 22300ms;
+  animation: arrow 56700ms infinite 22300ms; }
+
+.csslider1 > #cs_play1:checked ~ .cs_arrowprev > label.num3,
+.csslider1 > #cs_play1:checked ~ .cs_arrownext > label.num5 {
+  -webkit-animation: arrow 56700ms infinite 30400ms;
+  -moz-animation: arrow 56700ms infinite 30400ms;
+  -ms-animation: arrow 56700ms infinite 30400ms;
+  -o-animation: arrow 56700ms infinite 30400ms;
+  animation: arrow 56700ms infinite 30400ms; }
+
+.csslider1 > #cs_play1:checked ~ .cs_arrowprev > label.num4,
+.csslider1 > #cs_play1:checked ~ .cs_arrownext > label.num6 {
+  -webkit-animation: arrow 56700ms infinite 38500ms;
+  -moz-animation: arrow 56700ms infinite 38500ms;
+  -ms-animation: arrow 56700ms infinite 38500ms;
+  -o-animation: arrow 56700ms infinite 38500ms;
+  animation: arrow 56700ms infinite 38500ms; }
+
+.csslider1 > #cs_play1:checked ~ .cs_arrowprev > label.num5,
+.csslider1 > #cs_play1:checked ~ .cs_arrownext > label.num0 {
+  -webkit-animation: arrow 56700ms infinite 46600ms;
+  -moz-animation: arrow 56700ms infinite 46600ms;
+  -ms-animation: arrow 56700ms infinite 46600ms;
+  -o-animation: arrow 56700ms infinite 46600ms;
+  animation: arrow 56700ms infinite 46600ms; }
+
+.csslider1 > #cs_play1:checked ~ .cs_arrowprev > label,
+.csslider1 > #cs_play1:checked ~ .cs_arrownext > label {
+  -webkit-transition: 300ms background-color ease;
+  -moz-transition: 300ms background-color ease;
+  -ms-transition: 300ms background-color ease;
+  -o-transition: 300ms background-color ease;
+  transition: 300ms background-color ease; }
+
+.csslider1 .cs_arrowprev:hover > label,
+.csslider1 .cs_arrownext:hover > label {
+  background-color: white; }
+
+/* ===================== /ARROWS ===================== */
+/* ===================== BULLETS TRANSITION===================== */
+
+.csslider1 > .cs_bullets > label.num0 > span,
+.csslider1 > .cs_bullets > label.num1 > span,
+.csslider1 > .cs_bullets > label.num2 > span,
+.csslider1 > .cs_bullets > label.num3 > span,
+.csslider1 > .cs_bullets > label.num4 > span,
+.csslider1 > .cs_bullets > label.num5 > span,
+.csslider1 > .cs_bullets > label.num6 > span {
+  margin-top: -11px;
+  margin-left: -4px;
+  -webkit-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -moz-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -ms-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -o-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -ms-transform: scale(0);
+  -o-transform: scale(0);
+  transform: scale(0); }
+
+.csslider1 > .cs_bullets > label img {
+  border: 2px solid #fff; }
+
+.csslider1 > .cs_bullets > label.num0:hover > span,
+.csslider1 > .cs_bullets > label.num1:hover > span,
+.csslider1 > .cs_bullets > label.num2:hover > span,
+.csslider1 > .cs_bullets > label.num3:hover > span,
+.csslider1 > .cs_bullets > label.num4:hover > span,
+.csslider1 > .cs_bullets > label.num5:hover > span,
+.csslider1 > .cs_bullets > label.num6:hover > span {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1); }
+/*треугольные стрелки вниз от миниатюр*/
+.csslider1 > .cs_bullets > label > span:before {
+  content: '';
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 50%;
+  bottom: -2px;
+  margin-left: -4px;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-top: 7px solid #fff; }
+
+.csslider1 > .cs_bullets > label:hover > span:before {
+  opacity: 1;
+  visibility: visible; }
+
+.csslider1 > .slide:checked ~ .cs_bullets > label {
+  /* Fallback for web browsers that doesn't support RGBa */
+  background: transparent;
+  }
+
+.csslider1 > #cs_slide1_0:checked ~ .cs_bullets > label.num0,
+.csslider1 > #cs_slide1_1:checked ~ .cs_bullets > label.num1,
+.csslider1 > #cs_slide1_2:checked ~ .cs_bullets > label.num2,
+.csslider1 > #cs_slide1_3:checked ~ .cs_bullets > label.num3,
+.csslider1 > #cs_slide1_4:checked ~ .cs_bullets > label.num4,
+.csslider1 > #cs_slide1_5:checked ~ .cs_bullets > label.num5,
+.csslider1 > #cs_slide1_6:checked ~ .cs_bullets > label.num6 {
+  background-color: #ce242b; }
+
+/*Ставим время активной анимации 1/7 (по числу слайдов) и, соответственно, а время перехода будет равно времени проигрывания всех слайдов, т.е. 56700ms*/
+@-webkit-keyframes bullet {
+  0%, 14.275714% {
+    background-color: #ce242b; }
+  14.285714%, 100% {
+    background: transparent; }
+}
+@-moz-keyframes bullet {
+  0%, 14.275714% {
+    background-color: #ce242b; }
+  14.285714%, 100% {
+    background: transparent; }
+}
+@-ms-keyframes bullet {
+  0%, 14.275714% {
+    background-color: #ce242b; }
+  14.285714%, 100% {
+    background: transparent; }
+}
+@-o-keyframes bullet {
+  0%, 14.275714% {
+    background-color: #ce242b; }
+  14.285714%, 100% {
+    background: transparent; }
+}
+@keyframes bullet {
+  0%, 14.275714% {
+    background-color: #ce242b; }
+  14.285714%, 100% {
+    background: transparent; }
+}
+
+.csslider1 > #cs_play1:checked ~ .cs_bullets > label.num0 {
+  -webkit-animation: bullet 56700ms infinite -2000ms;
+  -moz-animation: bullet 24300ms infinite -2000ms;
+  -ms-animation: bullet 24300ms infinite -2000ms;
+  -o-animation: bullet 24300ms infinite -2000ms;
+  animation: bullet 56700ms infinite -2000ms; }
+
+.csslider1 > #cs_play1:checked ~ .cs_bullets > label.num1 {
+  -webkit-animation: bullet 56700ms infinite 6100ms;
+  -moz-animation: bullet 56700ms infinite 6100ms;
+  -ms-animation: bullet 56700ms infinite 6100ms;
+  -o-animation: bullet 56700ms infinite 6100ms;
+  animation: bullet 56700ms infinite 6100ms; }
+
+.csslider1 > #cs_play1:checked ~ .cs_bullets > label.num2 {
+  -webkit-animation: bullet 56700ms infinite 14200ms;
+  -moz-animation: bullet 56700ms infinite 14200ms;
+  -ms-animation: bullet 56700ms infinite 14200ms;
+  -o-animation: bullet 56700ms infinite 14200ms;
+  animation: bullet 56700ms infinite 14200ms; }
+
+.csslider1 > #cs_play1:checked ~ .cs_bullets > label.num3 {
+  -webkit-animation: bullet 56700ms infinite 22300ms;
+  -moz-animation: bullet 56700ms infinite 22300ms;
+  -ms-animation: bullet 56700ms infinite 22300ms;
+  -o-animation: bullet 56700ms infinite 22300ms;
+  animation: bullet 56700ms infinite 22300ms; }
+
+.csslider1 > #cs_play1:checked ~ .cs_bullets > label.num4 {
+  -webkit-animation: bullet 56700ms infinite 30400ms;
+  -moz-animation: bullet 56700ms infinite 30400ms;
+  -ms-animation: bullet 56700ms infinite 30400ms;
+  -o-animation: bullet 56700ms infinite 30400ms;
+  animation: bullet 56700ms infinite 30400ms; }
+
+  .csslider1 > #cs_play1:checked ~ .cs_bullets > label.num5 {
+    -webkit-animation: bullet 56700ms infinite 38500ms;
+    -moz-animation: bullet 56700ms infinite 38500ms;
+    -ms-animation: bullet 56700ms infinite 38500ms;
+    -o-animation: bullet 56700ms infinite 38500ms;
+    animation: bullet 56700ms infinite 38500ms; }
+
+    .csslider1 > #cs_play1:checked ~ .cs_bullets > label.num6 {
+      -webkit-animation: bullet 56700ms infinite 46600ms;
+      -moz-animation: bullet 56700ms infinite 46600ms;
+      -ms-animation: bullet 56700ms infinite 46600ms;
+      -o-animation: bullet 56700ms infinite 46600ms;
+      animation: bullet 56700ms infinite 46600ms; }
+
+
+
+.csslider1 > #cs_play1:checked ~ .cs_bullets > label {
+  -webkit-transition: none;
+  -moz-transition: none;
+  -ms-transition: none;
+  -o-transition: none;
+  transition: none; }
+
+/* ===================== /BULLETS ===================== */
+
+.csslider1.cs_handle {
+  cursor: -webkit-grab;
+  cursor: -moz-grab;
+  cursor: url("../img/handle.png"), move; }
+
+/* ===================== RESPONSIVE ===================== */
+@media only screen and (max-width: 1190px) {
+      .csslider1,
+      .csslider1 > ul {
+        height: auto; } }
+
+@media only screen and (max-width: 800px) {
+  .csslider1 > .cs_arrowprev > label,
+  .csslider1 > .cs_arrownext > label {
+    width: 50px;
+    height: 50px;
+    background: rgba(0,0,0,0.2);
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px; }
+
+    .csslider1 > .cs_arrowprev > label:after,
+    .csslider1 > .cs_arrownext > label:after {
+      font: 30px "controls";
+      line-height: 50px;
+     }
+     .csslider1 > .cs_arrowprev {
+       left: 60px; }
+
+     .csslider1 > .cs_arrownext {
+       right: 60px; }
+   }
+
+@media only screen and (max-width: 700px) {
+   }
+
+@media only screen and (max-width: 650px) {
+  .csslider1 > .cs_arrowprev > label,
+  .csslider1 > .cs_arrownext > label {
+    width: 40px;
+    height: 40px;
+    background: rgba(0,0,0,0.2);
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px; }
+
+    .csslider1 > .cs_arrowprev > label:after,
+    .csslider1 > .cs_arrownext > label:after {
+      font: 26px "controls";
+      line-height: 40px;
+     }
+  .csslider1 > .cs_arrowprev {
+    left: 50px; }
+  .csslider1 > .cs_arrownext {
+    right: 50px; }
+ }
+
+@media only screen and (max-width: 590px) {
+  .csslider1 > .cs_bullets {
+    bottom: 10px;
+    line-height: 5px;
+    padding-left: 10%;
+   }
+}
+
+@media only screen and (max-width: 480px), only screen and (-webkit-max-device-pixel-ratio: 2) and (max-width: 480px), only screen and (max--moz-device-pixel-ratio: 2) and (max-width: 480px), only screen and (-o-max-device-pixel-ratio: 2 / 1) and (max-width: 480px), only screen and (max-device-pixel-ratio: 2) and (max-width: 480px), only screen and (max-resolution: 192dpi) and (max-width: 480px), only screen and (max-resolution: 2dppx) and (max-width: 480px) {
+
+}
+
+@media only screen and (max-width: 435px) {
+}
+
+@media only screen and (max-width: 367px) {
+   }
+/* ===================== /RESPONSIVE ===================== */
+
+/*# sourceMappingURL=style.css.map */

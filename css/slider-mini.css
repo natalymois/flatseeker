@@ -1,0 +1,438 @@
+/*---slider-mini---*/
+        .slider-mini {
+          max-width: 100%;
+          position: relative;
+          display: block;
+		  overflow: hidden;
+        }
+        .slider-mini .carousel {
+          position: relative;
+          margin: 0;
+          padding: 0;
+          height: 193px;
+          z-index: 1;
+        }
+
+          .carousel .item {
+            position: absolute;
+            height: inherit;
+            max-width: 100%;
+            width: 100%;
+            color: #fff;
+          }
+
+        .slider-mini .carousel-tab {
+          position: absolute;
+          z-index: 2;
+          list-style-type: none;
+          bottom: 0;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 200px;
+          text-align: center;
+        }
+
+          .slider-mini .carousel-tab li {
+            width: 8px;
+            height: 8px;
+            border: 1px solid #fff;
+            border-radius: 50%;
+            background: transparent;
+            float: left;
+            margin-right: 15px;
+            cursor: pointer;
+          }
+
+          .slider-mini .carousel-tab li.active {
+            background: red;
+            border-color: red;
+          }
+
+        .slider-mini .control {
+          position: absolute;
+          top: 70px;
+          margin: 0;
+          width: 20px;
+          height: 20px;
+          cursor: pointer;
+          font-size: 0px;
+          opacity: 1;
+          color: #fff;
+          text-decoration: none;
+          z-index: 10;
+          border-radius: 50%;
+          background: rgba(0,0,0,0.3);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          /*transition: transform 1s ease-in-out;*/
+        }
+          /*.slider-mini .control:hover {
+            transform: rotate(360deg)
+          }*/
+            .slider-mini .control img {
+              height: 20px;
+              display: block;
+            }
+  @keyframes swingR {
+    15% {transform: translateX(4px);}
+    40% {transform: translateX(0);}
+  }
+  @keyframes swingL {
+    15% {transform: translateX(-4px);}
+    40% {transform: translateX(0);}
+  }
+        .slider-mini .control_prev {
+          left: 0;
+        }
+        .slider-mini .control_next {
+          right: 0;
+        }
+        .slider-mini .control_prev:hover img {
+          animation: swingL 0.8s ease;
+          animation-iteration-count: 1;
+        }
+        .slider-mini .control_next:hover img {
+          animation: swingR 0.8s ease;
+          animation-iteration-count: 1;
+        }
+
+      /*Настройка слайдов*/
+      #mini-slider-1 .item:nth-child(1) {
+        background: transparent url(../img/feature-1-1-1.jpg);
+        background-size: cover;
+      }
+
+      #mini-slider-1 .item:nth-child(2) {
+        background: transparent url(../img/feature-1-1-2.jpg);
+        background-size: cover;
+
+      }
+
+      #mini-slider-1 .item:nth-child(3) {
+        background: transparent url(../img/feature-1-1-3.jpg);
+        background-size: cover;
+      }
+
+      #mini-slider-1 .item:nth-child(4) {
+        background: transparent url(../img/feature-1-1-4.jpg);
+        background-size: cover;
+      }
+
+      #mini-slider-1 .item:nth-child(5) {
+        background: transparent url(../img/feature-1-1-5.jpg);
+        background-size: cover;
+      }
+
+      #mini-slider-1 .item:nth-child(6) {
+        background: transparent url(../img/feature-1-1-6.jpg);
+        background-size: cover;
+      }
+
+      #mini-slider-1 .item:nth-child(7) {
+        background: transparent url(../img/feature-1-1-7.jpg);
+        background-size: cover;
+      }
+
+      #mini-slider-1 .item:nth-child(8) {
+        background: transparent url(../img/feature-1-1-8.jpg);
+        background-size: cover;
+      }
+
+      #mini-slider-2 .item:nth-child(1) {
+        background: transparent url(../img/feature-1-2-1.jpg);
+        background-size: cover;
+      }
+
+      #mini-slider-2 .item:nth-child(2) {
+        background: transparent url(../img/feature-1-2-2.jpg);
+        background-size: cover;
+      }
+
+      #mini-slider-2 .item:nth-child(3) {
+        background: transparent url(../img/feature-1-2-3.jpg);
+        background-size: cover;
+      }
+
+      #mini-slider-2 .item:nth-child(4) {
+        background: transparent url(../img/feature-1-2-4.jpg);
+        background-size: cover;
+      }
+
+      #mini-slider-2 .item:nth-child(5) {
+        background: transparent url(../img/feature-1-2-5.jpg);
+        background-size: cover;
+      }
+
+      #mini-slider-2 .item:nth-child(6) {
+        background: transparent url(../img/feature-1-2-6.jpg);
+        background-size: cover;
+      }
+
+      #mini-slider-2 .item:nth-child(7) {
+        background: transparent url(../img/feature-1-2-7.jpg);
+        background-size: cover;
+      }
+
+      #mini-slider-2 .item:nth-child(8) {
+        background: transparent url(../img/feature-1-2-8.jpg);
+        background-size: cover;
+      }
+	  
+	  #mini-slider-3 .item:nth-child(1) {
+        background: transparent url(../img/feature-1-3-1.jpg);
+        background-size: cover;
+      }
+	  
+	  #mini-slider-3 .item:nth-child(2) {
+        background: transparent url(../img/feature-1-3-2.jpg);
+        background-size: cover;
+      }
+	  
+	  #mini-slider-3 .item:nth-child(3) {
+        background: transparent url(../img/feature-1-3-3.jpg);
+        background-size: cover;
+      }
+	  
+	  #mini-slider-3 .item:nth-child(4) {
+        background: transparent url(../img/feature-1-3-4.jpg);
+        background-size: cover;
+      }
+	  
+	  #mini-slider-3 .item:nth-child(5) {
+        background: transparent url(../img/feature-1-3-5.jpg);
+        background-size: cover;
+      }
+	  
+	  #mini-slider-3 .item:nth-child(6) {
+        background: transparent url(../img/feature-1-3-6.jpg);
+        background-size: cover;
+      }
+	  
+	  #mini-slider-3 .item:nth-child(7) {
+        background: transparent url(../img/feature-1-3-7.jpg);
+        background-size: cover;
+      }
+	  
+	  #mini-slider-3 .item:nth-child(8) {
+        background: transparent url(../img/feature-1-3-8.jpg);
+        background-size: cover;
+      }
+	  
+	  #mini-slider-4 .item:nth-child(1) {
+        background: transparent url(../img/feature-1-4-1.jpg);
+        background-size: cover;
+      }
+	  
+	  #mini-slider-4 .item:nth-child(2) {
+        background: transparent url(../img/feature-1-4-2.jpg);
+        background-size: cover;
+      }
+	  
+	  #mini-slider-4 .item:nth-child(3) {
+        background: transparent url(../img/feature-1-4-3.jpg);
+        background-size: cover;
+      }
+	  
+	  #mini-slider-4 .item:nth-child(4) {
+        background: transparent url(../img/feature-1-4-4.jpg);
+        background-size: cover;
+      }
+	  
+	  #mini-slider-4 .item:nth-child(5) {
+        background: transparent url(../img/feature-1-4-5.jpg);
+        background-size: cover;
+      }
+	  
+	  #mini-slider-4 .item:nth-child(6) {
+        background: transparent url(../img/feature-1-4-6.jpg);
+        background-size: cover;
+      }
+	  
+	  #mini-slider-4 .item:nth-child(7) {
+        background: transparent url(../img/feature-1-4-7.jpg);
+        background-size: cover;
+      }
+	  
+	  #mini-slider-4 .item:nth-child(8) {
+        background: transparent url(../img/feature-1-4-8.jpg);
+        background-size: cover;
+      }
+	  
+	  #mini-slider-5 .item:nth-child(1) {
+        background: transparent url(../img/feature-2-1-1.jpg);
+        background-size: cover;
+      }
+	  
+	  #mini-slider-5 .item:nth-child(2) {
+        background: transparent url(../img/feature-2-1-2.jpg);
+        background-size: cover;
+      }
+	  
+	  #mini-slider-5 .item:nth-child(3) {
+        background: transparent url(../img/feature-2-1-3.jpg);
+        background-size: cover;
+      }
+	  
+	  #mini-slider-5 .item:nth-child(4) {
+        background: transparent url(../img/feature-2-1-4.jpg);
+        background-size: cover;
+      }
+	  
+	  #mini-slider-5 .item:nth-child(5) {
+        background: transparent url(../img/feature-2-1-5.jpg);
+        background-size: cover;
+      }
+	  
+	  #mini-slider-5 .item:nth-child(6) {
+        background: transparent url(../img/feature-2-1-6.jpg);
+        background-size: cover;
+      }
+	  #mini-slider-5 .item:nth-child(7) {
+        background: transparent url(../img/feature-2-1-7.jpg);
+        background-size: cover;
+      }
+	  
+	  #mini-slider-5 .item:nth-child(8) {
+        background: transparent url(../img/feature-2-1-8.jpg);
+        background-size: cover;
+      }
+	  
+	  #mini-slider-6 .item:nth-child(1) {
+        background: transparent url(../img/feature-2-2-1.jpg);
+        background-size: cover;
+      }
+	  
+	   #mini-slider-6 .item:nth-child(2) {
+        background: transparent url(../img/feature-2-2-2.jpg);
+        background-size: cover;
+      }
+	  
+	   #mini-slider-6 .item:nth-child(3) {
+        background: transparent url(../img/feature-2-2-3.jpg);
+        background-size: cover;
+      }
+	  
+	   #mini-slider-6 .item:nth-child(4) {
+        background: transparent url(../img/feature-2-2-4.jpg);
+        background-size: cover;
+      }
+	  
+	   #mini-slider-6 .item:nth-child(5) {
+        background: transparent url(../img/feature-2-2-5.jpg);
+        background-size: cover;
+      }
+	  
+	   #mini-slider-6 .item:nth-child(6) {
+        background: transparent url(../img/feature-2-2-6.jpg);
+        background-size: cover;
+      }
+	  
+	   #mini-slider-6 .item:nth-child(7) {
+        background: transparent url(../img/feature-2-2-7.jpg);
+        background-size: cover;
+      }
+	  
+	   #mini-slider-6 .item:nth-child(8) {
+        background: transparent url(../img/feature-2-2-8.jpg);
+        background-size: cover;
+      }
+	  
+	  #mini-slider-7 .item:nth-child(1) {
+        background: transparent url(../img/feature-2-3-1.jpg);
+        background-size: cover;
+      }
+	  
+	  #mini-slider-7 .item:nth-child(2) {
+        background: transparent url(../img/feature-2-3-2.jpg);
+        background-size: cover;
+      }
+	  
+	  #mini-slider-7 .item:nth-child(3) {
+        background: transparent url(../img/feature-2-3-3.jpg);
+        background-size: cover;
+      }
+	  
+	  #mini-slider-7 .item:nth-child(4) {
+        background: transparent url(../img/feature-2-3-4.jpg);
+        background-size: cover;
+      }
+	  
+	  #mini-slider-7 .item:nth-child(5) {
+        background: transparent url(../img/feature-2-3-5.jpg);
+        background-size: cover;
+      }
+	  
+	  #mini-slider-7 .item:nth-child(6) {
+        background: transparent url(../img/feature-2-3-6.jpg);
+        background-size: cover;
+      }
+	  
+	  #mini-slider-7 .item:nth-child(7) {
+        background: transparent url(../img/feature-2-3-7.jpg);
+        background-size: cover;
+      }
+	  
+	  #mini-slider-7 .item:nth-child(8) {
+        background: transparent url(../img/feature-2-3-8.jpg);
+        background-size: cover;
+      }
+	  
+	  #mini-slider-8 .item:nth-child(1) {
+        background: transparent url(../img/feature-2-4-1.jpg);
+        background-size: cover;
+      }
+	  
+	  #mini-slider-8 .item:nth-child(2) {
+        background: transparent url(../img/feature-2-4-2.jpg);
+        background-size: cover;
+      }
+	  
+	  #mini-slider-8 .item:nth-child(3) {
+        background: transparent url(../img/feature-2-4-3.jpg);
+        background-size: cover;
+      }
+	  
+	  #mini-slider-8 .item:nth-child(4) {
+        background: transparent url(../img/feature-2-4-4.jpg);
+        background-size: cover;
+      }
+	  
+	  #mini-slider-8 .item:nth-child(5) {
+        background: transparent url(../img/feature-2-4-5.jpg);
+        background-size: cover;
+      }
+	  
+	  #mini-slider-8 .item:nth-child(6) {
+        background: transparent url(../img/feature-2-4-6.jpg);
+        background-size: cover;
+      }
+	  
+	  #mini-slider-8 .item:nth-child(7) {
+        background: transparent url(../img/feature-2-4-7.jpg);
+        background-size: cover;
+      }
+	  
+	  #mini-slider-8 .item:nth-child(8) {
+        background: transparent url(../img/feature-2-4-8.jpg);
+        background-size: cover;
+      }
+
+        .properties-item-id {
+          opacity: 0;
+          position: absolute;
+          top: -50px;
+          width: 100%;
+          background: #ce242b;
+          color: #fff;
+          font-size: 18px;
+          font-weight: bold;
+          padding: 2px;
+          transition: transform 0.4s ease;
+          z-index: 3
+        }
+        .slider-mini:hover .properties-item-id {
+          transform: translateY(48px);
+          opacity: 1;
+        }
+          /*---/slider-mini---*/
