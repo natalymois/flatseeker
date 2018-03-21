@@ -1235,15 +1235,10 @@ html {
         margin-bottom: 20px;
       }
         .promo-item {
-          display: -webkit-box;
-          display: -ms-flexbox;
           display: flex;
-          -webkit-box-pack: justify;
-              -ms-flex-pack: justify;
-                  justify-content: space-between;
+          justify-content: space-between;
           position: relative;
           width: 47%;
-          -webkit-transition: all 1s ease 0s;
           transition: all 1s ease 0s;
         }
           .promo-item-image {
@@ -1340,7 +1335,7 @@ html {
           .promo-description p {
             color: #323232;
             font-family: LatoWebLight;
-            font-size: 18px;
+            font-size: 14px;
             line-height: 23px;
             margin-top: 16px;
             padding: 5px 2px;
@@ -1567,6 +1562,14 @@ html {
       padding: 5px 15px;
     }
 }
+@media screen and (max-width:570px) {
+  .promo-item {
+    width: 100%
+  }
+  .promo-item:first-child {
+    margin-bottom: 5px;
+  }
+}
 @media screen and (max-width:530px) {
   .header-container {
     -ms-flex-wrap: wrap;
@@ -1588,30 +1591,15 @@ html {
   .header-top .search-block {
     width: 50%;
   }
-  .promo-item-image {
-    width: 70%
-  }
-  .promo-description {
-    width: 98%;
-  }
-  .promo-item-image-1,
-  .promo-item-image-2 {
-    height: 100px;
-  }
-  .promo-description h3 {
-    font-size: 12px;
-  }
-  .promo-description,
-  .promo-description p {
-    font-size: 10px;
-    line-height: 13px;
-  }
   .properties-item {
     width: 90%;
     margin-left: 5%;
   }
   .properties-item-description {
     margin-bottom: 10px;
+  }
+  .promo-item {
+    flex-wrap: wrap;
   }
   .footer-top {
     -ms-flex-wrap: wrap;
@@ -1641,14 +1629,29 @@ html {
     margin-top: 5px;
   }
   .promo-item {
-    width: 98%;
+    width: 100%;
     margin-top: 5px;
   }
-  .promo-item-image-1,
-  .promo-item-image-2 {
-    height: 160px;
+  .promo-item-image {
+    width: 96%;
+    margin-left: 2%;
+    margin-right: 2%;
   }
-  
+  .promo-description {
+    width: 96%;
+    margin-left: 2%;
+    margin-top: 15px;
+    text-align: center;
+  }
+  .promo-description p {
+    margin-bottom: 15px;
+  }
+  .partner-item {
+    width: 96%;
+    margin-left: 2%;
+    height: 300px;
+    margin-bottom: 10px;
+  }
   .sale, .rent {
     width: 11%;
     top: 3%;
@@ -1660,5 +1663,8 @@ html {
   }
   .social {
     margin: 0 auto;
+  }
+  .partner-item {
+    height: 250px
   }
 }

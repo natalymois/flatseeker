@@ -158,7 +158,7 @@ $(document).ready(function() {
 
             var href = $this.attr('data-slide-to');
 
-            var $target = mySlider.find(".carousel").find('[nr-slide="' + href + '"]');
+            var $target = mySlider.find(".carousel").find('.item');
 
             if ($target.length) {
               e.preventDefault();
