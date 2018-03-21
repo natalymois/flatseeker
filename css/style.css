@@ -1438,6 +1438,31 @@ html {
         font-weight: bold;
         cursor: pointer;
       }
+  .upbutton {
+    background: #fff;
+    height: 26px;
+    width: 40px;
+    bottom: 30px;
+    right: 30px;
+    cursor: pointer;
+    display: none;
+    position: fixed;
+    border: 2px solid #CE242B;
+    border-radius: 5px;
+    text-align: center;
+    z-index: 99;
+  }
+
+  .upbutton::after {
+    display: block;
+    content: "\25b2";
+    position: absolute;
+    top: 1px;
+    left: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #CE242B;
+  }
 /* media */
 @media screen and (max-width:1000px) {
   .bottom-menu li {
@@ -1507,9 +1532,7 @@ html {
     margin-top: 6px;
     padding: 5px;
   }
-      /*.properties-item img {
-        height: 193px;
-      }*/
+
     .partners .centerfix {
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
@@ -1598,8 +1621,8 @@ html {
     width: 100%;
   }
   .header-top {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-top: 0   
   }
   .header-top .search-block {
     width: 50%;
