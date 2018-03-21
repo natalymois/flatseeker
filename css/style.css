@@ -1529,7 +1529,7 @@ html {
         flex-wrap: wrap;
   }
   .services {
-    height: 530px;
+    height: auto;
   }
   .service-item {
     margin-bottom: 5px;
@@ -1538,6 +1538,9 @@ html {
   .partner-item {
     height: 200px;
   }
+    .partner-item:nth-child(1),.partner-item:nth-child(2) {
+      margin-bottom: 10px
+    }
   .promo-item-image {
     margin-right: 10px;
   }
@@ -1548,19 +1551,32 @@ html {
   .promo-description {
     padding-top: 0
   }
-    .promo-description h3 {
-      margin-top: 0;
-      font-size: 14px;
-    }
-    .promo-description,
-    .promo-description p {
-      font-size: 12px;
-      line-height: 15px;
-      margin-top: 5px;
-    }
-    .promo-description .btn {
-      padding: 5px 15px;
-    }
+  .promo-description h3 {
+    margin-top: 0;
+    font-size: 14px;
+  }
+  .promo-description,
+  .promo-description p {
+    font-size: 12px;
+    line-height: 15px;
+    margin-top: 5px;
+  }
+  .promo-description .btn {
+    padding: 5px 15px;
+  }
+  .footer-top {
+    flex-wrap: wrap;
+  }
+  .google_map {
+    width: 98%;
+    margin-left: 0;
+  }
+  .contacts {
+    width: 45%;
+  }
+  .footer-menu {
+    width: 35%
+  }
 }
 @media screen and (max-width:570px) {
   .promo-item {
@@ -1601,20 +1617,6 @@ html {
   .promo-item {
     flex-wrap: wrap;
   }
-  .footer-top {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  .google_map {
-    width: 98%;
-    margin-left: 0;
-  }
-  .contacts {
-    width: 45%;
-  }
-  .footer-menu {
-    width: 35%
-  }
 }
 @media screen and (max-width:430px) {
   .hidden-top-menu {
@@ -1624,6 +1626,9 @@ html {
     .hidden-top-menu li a {
       font-size: 16px;
     }
+  .service-item {
+    width: 100%;
+  }
   .servise-item-image-a {
     font-size: 16px;
     margin-top: 5px;
